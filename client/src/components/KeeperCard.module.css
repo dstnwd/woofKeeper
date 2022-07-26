@@ -1,0 +1,12 @@
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.rate {
+    font-size: 40px;
+}
