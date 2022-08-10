@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/fonts/Raleway-Italic-VariableFont_wght.ttf';
+import './assets/fonts/Raleway-VariableFont_wght.ttf';
 
 ReactDOM.render( 
   <React.StrictMode> 
