@@ -1,12 +1,64 @@
+.keeperCard {
+    transition: transform 0.2s;
+}
+
+.keeperCard:hover {
+    transform: scale(1.1);
+}
+
 .avatar {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
-    border: 1px solid black;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.hireMeContainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.hireMeContainer:hover {
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+.hireMeButton {
+    background-color: #E2E4E5;
 }
 
 .rate {
     font-size: 40px;
+}
+
+.textHighlight {
+    background-color: #81ADBE;
+    color: white;
+}
+
+.keeperName {
+    font-family: "RalewayNormal";
+    font-size: 25px;
+}
+
+.keeperDate {
+    font-family: "RalewayItalic";
+    font-size: 12px;
+}
+
+.locationIcon {
+    height: 28px;
+}
+
+.locationText {
+    font-family: "RalewayNormal";
+    font-size: 10px;
 }

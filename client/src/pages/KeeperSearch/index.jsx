@@ -7,19 +7,7 @@ const PAGE_SIZE = 6;
 const KeeperSearch = () => {
 
     const [allKeepers, setAllKeepers] = useState([]);
-    const [ page, setPage ] = useState(1);
-    const [ total, setTotal ] = useState(0);
-    const [ lastCursor, setLastCursor ] = useState(null);
-
-    // useEffect(() => {
-    //     axios.get(`http://localhost:8000/api/user/keepers-total`)
-    //         .then((response) => {
-    //             setTotal(response.data);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         })
-    // }, []);
+    const [lastCursor, setLastCursor] = useState(null);
 
     const fetchKeepers = () => {
         axios.post(
@@ -49,7 +37,7 @@ const KeeperSearch = () => {
         <>
             <div className="row mx-0 px-2 py-4">
                 {allKeepers.map((keeper) => (
-                    <div key={keeper._id} className="col-4 pb-4">
+                    <div key={keeper._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pb-4">
                         <KeeperCard
                             name={keeper.name}
                             pictureUrl={keeper.pictureUrl}
