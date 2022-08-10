@@ -1,0 +1,12 @@
+.login {
+    background-color: #06698F;
+    border-radius: 10px;
+}
+
+.login label {
+    color: white;
+}
+
+.accessButton {
+    background-color: #E2E4E5;
+}
