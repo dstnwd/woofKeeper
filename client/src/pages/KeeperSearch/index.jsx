@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 import KeeperCard from '../../components/KeeperCard';
 
 const PAGE_SIZE = 6;
@@ -35,6 +36,11 @@ const KeeperSearch = () => {
 
     return (
         <>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Woof Keeper | Search your keeper</title>
+            </Helmet>
+
             <div className="row mx-0 px-2 py-4">
                 {allKeepers.map((keeper) => (
                     <div key={keeper._id} className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 pb-4">

@@ -21,12 +21,6 @@
     text-decoration: underline;
 }
 
-.signUpLink {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.signUpLink:hover {
-    text-decoration: underline;
-    transform: scale(1.1);
+.accessButton {
+    background-color: #E2E4E5 !important;
 }
