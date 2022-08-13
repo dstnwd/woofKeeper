@@ -1,0 +1,15 @@
+.showMoreButton {
+    background-color: rgb(129,219,153);
+    border-radius: 0;
+    color: white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.showMoreButton:hover {
+    background-color: rgb(197,224,204);
+    color: #989B99;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+}

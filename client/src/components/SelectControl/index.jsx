@@ -1,13 +1,13 @@
 import React from 'react';
 
 const SelectControl = ({
-    value,
-    options,
-    handleSelect,
-    placeholder,
-    id,
-    customClassName,
-}) => {
+                           value,
+                           options,
+                           handleSelect,
+                           placeholder,
+                           id,
+                           customClassName,
+                       }) => {
     return (
         <select
             className={`form-select ${customClassName}`}
@@ -16,7 +16,7 @@ const SelectControl = ({
             value={value}
             id={id}
         >
-            <option selected>{placeholder}</option>
+            <option value={undefined}>{placeholder}</option>
             {
                 options.map((option) => (
                     <option value={option.value} key={option.value}>{option.label}</option>
@@ -25,5 +25,5 @@ const SelectControl = ({
         </select>
     );
 }
- 
+
 export default SelectControl;

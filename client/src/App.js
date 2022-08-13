@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar';
+import Index from './components/Navbar';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import KeeperSearch from './pages/KeeperSearch';
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <Index />
 
         <Routes>
           <Route element={<KeeperSearch />} path="/" />

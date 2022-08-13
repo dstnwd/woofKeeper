@@ -1,0 +1,42 @@
+.logoPicture {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.logoText {
+    font-family: "RalewayNormal";
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.loginButton {
+    background-color: rgb(129,219,153);
+    border-radius: 0;
+    color: white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.loginButton:hover {
+    background-color: rgb(197,224,204);
+    color: #989B99;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+}
+
+@media screen and (max-width: 460px) {
+    .logoPicture {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logoText {
+        font-size: 20px;
+    }
+
+    .loginButton {
+        padding: 0.5rem;
+    }
+}

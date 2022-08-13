@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Helmet } from 'react-helmet';
-import KeeperCard from '../../components/KeeperCard';
-
-const PAGE_SIZE = 6;
+import KeeperCard from 'components/KeeperCard';
+import Button from "components/Button";
+import styles from './KeeperSearch.module.css';
 
 const KeeperSearch = () => {
 
@@ -16,7 +16,6 @@ const KeeperSearch = () => {
             { lastCursor },
             )
             .then((response) => {
-                console.log(response.data);
                 setAllKeepers([...allKeepers, ...response.data.results]);
                 setLastCursor(response.data.lastCursor);
             })
@@ -60,11 +59,11 @@ const KeeperSearch = () => {
                 <div className='col'>
                     {
                         lastCursor && (
-                            <button
-                                type='button'
-                                className='btn btn-primary'
+                            <Button
+                                customClassName={`${styles.showMoreButton}`}
                                 onClick={handleShowingMoreResults}
-                            >Show more</button>
+                                label="Show more"
+                            />
                         )
                     }
                 </div>
